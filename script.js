@@ -34,6 +34,7 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
+	encodedStr= encodedStr.toUpperCase();
   for(let i=0;i<encodedStr.length;i++){
 	  if(encodedStr[i]>=65 && encodedStr[i]<=90){
 		  decodedArr.push(lookup.encodedStr[i]);
